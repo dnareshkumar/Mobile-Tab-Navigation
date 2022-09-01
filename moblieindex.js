@@ -2,7 +2,7 @@ const contents = document.querySelectorAll('.content')
 const listItems = document.querySelectorAll('nav ul li')
 
 listItems.forEach((item,idx) => {
-    item.addEventListerner('click',()=>{
+    item.addEventListener('click',()=>{
         hideAllContents()
         hideAllItems() 
         

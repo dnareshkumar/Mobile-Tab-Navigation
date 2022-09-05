@@ -1,29 +1,28 @@
-/*@import url('https://fonts.googleapis.com/css?family=open+Sans&display=swap');*/
+@import url("https://fonts.gooogleapis.com/css?family=Open+Sans&display=swap");
 
 *{
     box-sizing: border-box;
 }
-
-body{
-    background-color: rgba(155, 89,182, 0.7);
-    font-family:'Open Sans', sans-serif ;
+body {
+    background-color: #222457;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
 }
-.phone{
+.phone {
     position: relative;
     overflow: hidden;
-    border:3px solid #eee ;
+    border: 3px solid #eee;
     border-radius: 15px;
     height: 600px;
     width: 340px;
-    transition: opacity 0.4s ease;
-
+ 
 }
-.phone .content{
+.phone .content { 
+    opacity: 0;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -32,20 +31,17 @@ body{
     width: 100%;
     transition: opacity 0.4s ease;
 }
-
-.phone.content.show{
+.phone .content.show {
     opacity: 1;
-
 }
-nav{
+nav {
     position: absolute;
     bottom: 0;
     left: 0;
     margin-top: -5px;
     width: 100%;
 }
-
-nav ul{
+nav ul {
     background-color: #fff;
     display: flex;
     list-style-type: none;
@@ -55,28 +51,26 @@ nav ul{
 }
 
 nav li{
-    color: #777;
+    color: #6461a2;
     cursor: pointer;
     flex: 1;
     padding: 10px;
-    text-align:center;
-}
-nav ul li{
-    list-style: none;
     text-align: center;
-    display: block;
-    border-right: 1px solid rgba(0,0,0,.3);
 }
-nav ul li a{
-    text-decoration: none;
-    padding: 0 2px;
-    display: block;
-}
-nav ul li p{
+nav ul li {
+    color: #444;
+    padding: 10px;
+    text-align: center;
     font-size: 12px;
+    cursor: pointer;
     margin: 2px 0;
+    flex: 1;
 }
 nav ul li:hover, 
-nav ul li:active{
-    color: #8e44ad;
+nav ul li.active {
+    color: #222457;
+}
+nav ul li p {
+    font-size: 12px;
+    margin: 2px 0;
 }
